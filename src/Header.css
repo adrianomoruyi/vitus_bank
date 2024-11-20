@@ -1,0 +1,28 @@
+.header{
+    background-color: purple;
+    height: 150px;
+}
+
+.titleBox{
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xxx-large;
+    height: fit-content;
+    margin: 0px;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: fit-content;
+    color: white;
+}
+
+.logo{
+    height: 90px;
+    width: 90px;
+    margin: 20px;
+    
+}
