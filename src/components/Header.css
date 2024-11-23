@@ -1,28 +1,27 @@
 .header{
-    background-color: purple;
-    height: 150px;
+    background-color: #41024E;
+    height: 80px;
+    display: flex;
+    align-items: center; 
 }
 
 .titleBox{
     width: 100%;
     text-align: left;
     display: flex;
+    align-items: center;
 }
 
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: xxx-large;
-    height: fit-content;
     margin: 0px;
-    margin-top: 40px;
-    margin-left: 30px;
-    width: fit-content;
+    margin-left: 10px;
     color: white;
+    user-select: none;
 }
 
 .logo{
-    height: 90px;
-    width: 90px;
-    margin: 20px;
-    
+    height: 50px;
+    margin: 20px;  
 }

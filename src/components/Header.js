@@ -1,6 +1,6 @@
 import React from 'react';
-import './Header.css'; // Optional: For styling
-import Logo from './banklogo.png';
+import '../components/Header.css'; // Optional: For styling
+import Logo from '../img/banklogo.png';
 
 const Header = () => {
   return (
