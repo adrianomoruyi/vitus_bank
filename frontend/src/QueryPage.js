@@ -18,6 +18,7 @@ function QueryPage() {
   useEffect(() => {
     axios.get('http://localhost:5000/api/data') // Adjust to match your backend URL
       .then(response => {
+        console.log(response.data);  // Log the result here
         setData(response.data);
         setLoading(false);
       })
