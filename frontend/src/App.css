@@ -30,3 +30,7 @@ h2{
   user-select: none;
   font-weight: 500;
 }
+
+.header{
+  margin: 0px;
+}

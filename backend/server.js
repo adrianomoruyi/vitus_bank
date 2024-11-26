@@ -15,33 +15,45 @@ const dbConfig = {
   connectString: 'localhost:1521/XE', // replace with your host, port, and SID
 };
 
-// Route to fetch data from all tables
+// List of your original tables
+const originalTables = ['DEPOSIT', 'WITHDRAWAL', 'LOAN', 'BANK', 'BRANCH', 'USER_', 'ACCOUNT_'];
+
+// Route to fetch data from specified tables
 app.get('/api/data', async (req, res) => {
   try {
     console.log("Connecting to the database...");
     const connection = await oracledb.getConnection(dbConfig);
     console.log("Connected");
 
-    // Get all table names from USER_TABLES
-    const tablesResult = await connection.execute(
-      `SELECT table_name FROM user_tables`
-    );
-
-    const tables = tablesResult.rows;
     let allData = {};
 
-    // For each table, query its data and store it in an object
-    for (let table of tables) {
-      const tableName = table[0]; // Extract table name
-      const query = `SELECT * FROM ${tableName}`;
+    // For each table in the list, query its column names and data
+    for (let tableName of originalTables) {
+      const columnQuery = `SELECT COLUMN_NAME FROM USER_TAB_COLUMNS WHERE TABLE_NAME = :tableName`;
+      const dataQuery = `SELECT * FROM ${tableName}`;
       
-      // Query the table's data
-      const result = await connection.execute(query);
-      allData[tableName] = result.rows;
+      try {
+        // Get column names for the current table
+        const columnsResult = await connection.execute(columnQuery, [tableName]);
+        const columnNames = columnsResult.rows.map(row => row[0]);
+
+        // Get the data for the current table
+        const dataResult = await connection.execute(dataQuery);
+        const tableData = dataResult.rows;
+
+        // Store column names and data for each table
+        allData[tableName] = {
+          columns: columnNames,
+          data: tableData
+        };
+      } catch (err) {
+        console.error(`Error querying table ${tableName}:`, err.message);
+        allData[tableName] = { columns: [], data: `Error: ${err.message}` };
+      }
     }
 
     await connection.close();
-    res.json(allData); // Send all tables' data as a JSON response
+    res.json(allData); // Send both columns and data as a JSON response
 
   } catch (err) {
     console.error(err);

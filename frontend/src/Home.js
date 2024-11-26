@@ -17,7 +17,7 @@ function Home() {
     <div className="App">
     <Header></Header>
     <div className="banner">
-      <h2>Hello, there. Welcome to <strong>Vitus.</strong></h2>
+      <h2 className="helloTitle">Hello, there. Welcome to <strong>Vitus.</strong></h2>
       <Button text='Register Today!'></Button>
     </div>
     <Button style={{
