@@ -1,0 +1,16 @@
+.banner {
+    margin: 0;
+    height: 200px;
+    background-color: #FBE7FF;
+  }
+  
+  h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: black;
+    user-select: none;
+    font-weight: 500;
+  }
