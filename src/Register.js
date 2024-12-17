@@ -4,11 +4,13 @@ import './Register.css';
 
 function Register() {
   return (
-    <div className="Home">
+    <div className="Register">
       <Header></Header>
-      <div className="banner">
+      <div className="banner2">
         <h2>Online Banking Registration</h2>
-        <Button text='Register Today!'></Button>
+      </div>
+      <div className="form">
+        <h3>Please enter your details below</h3>
       </div>
     </div>
   );
