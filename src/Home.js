@@ -27,9 +27,9 @@ function Home() {
       </div>
       <div style={{height:"50px"}}></div>  
       <h3>Sign into your Vitus account</h3>   
-      <input className="long" type="text" name="name" placeholder="    Email address"/>
-      <input className="long" type="text" name="name" placeholder="    Password"/>
-      <Button style={{marginTop: "10px", marginBottom: "0px", paddingLeft: "40px" , paddingRight: "40px"}}text='Sign in'> onClick={handleClick2} </Button>     
+      <input className="long" type="text" name="name" placeholder="Email address"/>
+      <input className="long" type="text" name="name" placeholder="Password"/>
+      <Button style={{marginTop: "10px", marginBottom: "0px", paddingLeft: "40px" , paddingRight: "40px"}}text='Sign in' onClick={handleClick2}> </Button>     
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import Header from './components/Header.js';
-import Button from './components/Button.js';
-import styles from './Dashboard.css';
+import './Dashboard.css';
 import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
@@ -9,6 +8,14 @@ function Dashboard() {
 
   return (
     <div className="Dashboard">
+      <Header text={"Welcome back, User"}></Header>
+      <div className="dashbanner">
+
+      </div>
+      <div className="row">
+        <div className="sidebar"></div>
+
+      </div>
     </div>
   );
 }
