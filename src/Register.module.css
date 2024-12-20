@@ -1,4 +1,4 @@
-.banner2 {
+.banner {
     margin: 0;
     height: 100px;
     background-color: #FBE7FF;
@@ -49,7 +49,7 @@
     margin-bottom: 30px;
   }
   
-  h2{
+  .Register h2{
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0;
@@ -60,7 +60,7 @@
     font-weight: 500;
   }
 
-  h3{
+  .Register h3{
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0;

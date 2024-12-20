@@ -14,17 +14,22 @@ function Home() {
   navigate("/register"); // Navigate to the Register page
   };
 
+  const handleClick2 = () => {
+    navigate("/dashboard"); // Navigate to the Register page
+    };
+
   return (
     <div className="Home">
       <Header></Header>
       <div className="banner">
         <h2>Hello, there. Welcome to <strong>Vitus.</strong></h2>
-        <Button text='Register Today!' onClick={handleClick}></Button>
+        <Button text='Register Today!' onClick={handleClick}></Button>     
       </div>
-      <Button style={{
-          position: 'absolute',
-          bottom: '30px',
-          left: '30px',}} text='Query Page'></Button>
+      <div style={{height:"50px"}}></div>  
+      <h3>Sign into your Vitus account</h3>   
+      <input className="long" type="text" name="name" placeholder="    Email address"/>
+      <input className="long" type="text" name="name" placeholder="    Password"/>
+      <Button style={{marginTop: "10px", marginBottom: "0px", paddingLeft: "40px" , paddingRight: "40px"}}text='Sign in'> onClick={handleClick2} </Button>     
     </div>
   );
 }
