@@ -8,21 +8,18 @@ function Button({ text, onClick, style, disabled }) {
       onClick={onClick} 
       style={style} 
       disabled={disabled} 
-      className="custom-button"
-    >
+      className="custom-button">
       {text}
     </button>
   );
 }
 
-// Define default props
 Button.defaultProps = {
   text: 'Click Me',
   style: {},
   disabled: false,
 };
 
-// Prop validation
 Button.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func,

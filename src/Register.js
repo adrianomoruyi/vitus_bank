@@ -11,49 +11,18 @@ function Register() {
       </div>
       <div className="form">
         <h3>Please enter your details below</h3>
-        <input style={{
-          fontFamily: "Georgia, 'Times New Roman', Times, serif",
-          fontSize: "20px",
-          width: "80%",
-          height: "50px",
-        }}type="text" name="name" placeholder="    First name"/>
-        <input style={{
-          fontFamily: "Georgia, 'Times New Roman', Times, serif",
-          fontSize: "20px",
-          width: "80%",
-          height: "50px",
-          marginTop: "30px"
-        }}type="text" name="name" placeholder="    Last name"/>
-        <input style={{
-          fontFamily: "Georgia, 'Times New Roman', Times, serif",
-          fontSize: "20px",
-          width: "80%",
-          height: "50px",
-          marginTop: "30px"
-        }}type="text" name="name" placeholder="    Phone number"/>
-        
-        <div class="row">
-        <div style={{backgroundColor: "red"}} class="column">
-        <input style={{
-          fontFamily: "Georgia, 'Times New Roman', Times, serif",
-          fontSize: "20px",
-          width: "100%",
-          height: "50px",
-          marginTop: "30px"
-        }}type="text" name="name" placeholder="    Phone number"/>
-        </div>
-        <div style={{backgroundColor: "green"}} class="column">
-        <input style={{
-          fontFamily: "Georgia, 'Times New Roman', Times, serif",
-          fontSize: "20px",
-          width: "100%",
-          height: "50px",
-          marginTop: "30px"
-        }}type="text" name="name" placeholder="    Phone number"/>
-        </div>
-
+        <input className="long" type="text" name="name" placeholder="    First name"/>
+        <input className="long" type="text" name="name" placeholder="    Last name"/>
+        <input className="long" type="text" name="name" placeholder="    Phone number"/>
+      <div className="row">
+        <input className="short" type="text" name="name" placeholder="    Email address"/>
+        <input className="short" type="text" name="name" placeholder="    Confirm email address"/>
       </div>  
-
+      <div className="row">
+        <input className="short" type="text" name="name" placeholder="    Password"/> 
+        <input className="short" type="text" name="name" placeholder="    Confirm password"/>
+      </div> 
+      <Button style={{marginTop: "10px", marginBottom: "0px"}}text='Submit Registration'></Button>
       </div>
     </div>
   );
