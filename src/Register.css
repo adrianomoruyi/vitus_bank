@@ -2,7 +2,7 @@
     margin: 0;
     height: 100px;
     background-color: #FBE7FF;
-
+    margin-top: 60px;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
@@ -13,13 +13,24 @@
   }
 
   .form {
-    margin: 0;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 2.5%;
     height: 700px;
     background-color: #ffffff;
     filter: drop-shadow(0px 5px 4px #979797);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+
+  }
+  .row {
+    display: flex;
+  }
+  .column {
+    flex: 50%;
   }
   
   h2{

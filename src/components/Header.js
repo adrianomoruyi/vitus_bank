@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../components/Header.css'; // Optional: For styling
 import Logo from '../img/banklogo.png';
 
-const Header = () => {
+function Header (){  
   return (
     <header className="header">
       <div className="header-container">
