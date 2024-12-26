@@ -1,0 +1,20 @@
+import Header from '../../components/Header.js';
+import './Deposit.css';
+import Button from '../../components/Button.js';
+import { Outlet, useNavigate } from "react-router-dom";
+
+function Deposit() {
+  return (
+    <div className="Deposit">
+      <title>Vitus Bank - Dashboard</title> 
+      <div className="column">
+        <h2>Deposit</h2>
+        <input className="long" type="text" name="name" placeholder="Account"/>
+        <input className="long" type="text" name="name" placeholder="Amount"/>
+        <Button className="custom-button" style={{marginTop: "10px", marginBottom: "0px", paddingLeft: "40px" , paddingRight: "40px", width: "20%"}}text='Submit'> </Button>
+      </div>
+    </div>
+  );
+}
+
+export default Deposit;

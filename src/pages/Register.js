@@ -1,8 +1,16 @@
-import Header from './components/Header.js';
-import Button from './components/Button.js';
+import Header from '../components/Header.js';
+import Button from '../components/Button.js';
 import styles from './Register.module.css';
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/"); // Navigate to the Register page
+    };
+
   return (
     <div className={styles.Register}>
       <Header></Header>
@@ -22,7 +30,7 @@ function Register() {
         <input className={styles.short} type="text" name="name" placeholder="Password"/> 
         <input className={styles.short} type="text" name="name" placeholder="Confirm password"/>
       </div> 
-      <Button style={{marginTop: "10px", marginBottom: "0px"}}text='Submit Registration'></Button>
+      <Button className="custom-button" style={{marginTop: "10px", marginBottom: "0px"}}text='Submit Registration' onClick={handleClick}></Button>
       </div>
     </div>
   );
