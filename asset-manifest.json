@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vitus_bank/static/css/main.9c61b287.css",
+    "main.js": "/vitus_bank/static/js/main.6d7dd2e0.js",
+    "static/js/453.772695fa.chunk.js": "/vitus_bank/static/js/453.772695fa.chunk.js",
+    "index.html": "/vitus_bank/index.html",
+    "main.9c61b287.css.map": "/vitus_bank/static/css/main.9c61b287.css.map",
+    "main.6d7dd2e0.js.map": "/vitus_bank/static/js/main.6d7dd2e0.js.map",
+    "453.772695fa.chunk.js.map": "/vitus_bank/static/js/453.772695fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c61b287.css",
+    "static/js/main.6d7dd2e0.js"
+  ]
+}
