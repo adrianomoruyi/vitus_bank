@@ -22,7 +22,7 @@ export function useUser() {
 //Routing the pages of the webapp
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/vitus_bank">
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/register" element={<Register />}/>
