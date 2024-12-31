@@ -20,9 +20,10 @@ function Home() {
   // Fetching the data from the backend
   const [data, setData] = useState({});
     useEffect(() => {
-      axios.get('http://localhost:4000/customers')
+      axios.get('http://vitus-backend-production.up.railway.app/customers')
         .then(response => {
           setData(response.data);
+          console.log(response.data)
         })
         .catch(error => {
           console.error('Error fetching data:', error);
