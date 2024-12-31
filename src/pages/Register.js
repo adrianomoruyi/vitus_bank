@@ -8,7 +8,7 @@ function Register() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/"); // Navigate to the Register page
+    navigate("/");
     };
 
   return (
@@ -30,7 +30,7 @@ function Register() {
         <input className={styles.short} type="text" name="name" placeholder="Password"/> 
         <input className={styles.short} type="text" name="name" placeholder="Confirm password"/>
       </div> 
-      <Button className="custom-button" style={{marginTop: "10px", marginBottom: "0px"}}text='Submit Registration' onClick={handleClick}></Button>
+      <Button className="custom-button" style={{marginTop: "10px", marginBottom: "0px"}}text='Back to Homepage' onClick={handleClick}></Button>
       </div>
     </div>
   );

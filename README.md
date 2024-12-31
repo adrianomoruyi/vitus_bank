@@ -8,7 +8,8 @@ Vitus Bank is a online banking mockup created as the final project for CPS510: D
 - CSS
 
 ## Back-End
-- Oracle SQL
-- Java
+- MongoDB
+- node.js (express.js)
+- Docker
 
 The purpose of this project is to demonstrate the usage of a DBMS in a working full-stack application.

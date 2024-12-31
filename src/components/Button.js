@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.css';
 
+//Defining the button component used throughout the webapp
 function Button({ className, text, onClick, style, disabled }) {
   return (
     <button 
