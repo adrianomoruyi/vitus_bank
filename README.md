@@ -1,5 +1,7 @@
 # vitus_bank
 
+https://adrianomoruyi.github.io/vitus_bank/
+
 Vitus Bank is a online banking mockup created as the final project for CPS510: Database Systems I at Toronto Metropolitan University. It's tech stack is as follows:
 
 ## Front-End
