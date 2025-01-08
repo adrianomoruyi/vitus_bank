@@ -8,6 +8,7 @@ Vitus Bank is a online banking mockup created as the final project for CPS510: D
 - React (JavaScript)
 - HTML
 - CSS
+- Figma (UI Design: https://www.figma.com/design/xJHmuqpetNnCF7A3xgNo1o/CPS510?node-id=7-526)
 
 ## Back-End
 - MongoDB
