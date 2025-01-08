@@ -1,0 +1,107 @@
+.Dashboard {
+    text-align: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh;
+    align-items: stretch
+  }
+  
+  .Home-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .long {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 60%;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .dashbanner {
+    margin-top: 60px;
+    height: 100px;
+    background-color: #d3d3d3;
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    background-color: #c7c7c773;
+    min-height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .balance {
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: black;
+    user-select: none;
+    font-weight: 500;
+  }
+
+  @media (max-width: 684px) {
+    h2 {
+      font-size: 2.5em;
+    }
+    .balance h3 {
+      font-size: 20px;
+    }
+    .dropdown {
+      width: 20px;
+    }
+    .sidebar {
+      width: 200px;
+    }
+  }
+
+  h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    user-select: none;
+    font-weight: 100;
+  }

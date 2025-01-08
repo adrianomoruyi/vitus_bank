@@ -1,0 +1,47 @@
+.header{
+    background-color: #41024E;
+    height: 60px;
+    display: flex;
+    align-items: center; 
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    z-index: 1; /*z-index sets the header above other elements*/
+}
+
+.titleBox{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    margin: 0px;
+    margin-left: 10px;
+    color: white;
+    user-select: none;
+}
+
+.logo{
+    height: 40px;
+    margin: 20px;  
+}
+
+.username{
+    font-weight: 100;
+    font-size: x-large;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+@media (max-width: 684px) {
+    .titleBox h1 {
+      display: none;
+    }
+    .titleBox {
+      width: 20%;
+    }
+  }
