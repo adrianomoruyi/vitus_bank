@@ -71,7 +71,7 @@ function Deposit() {
           </select>
           <input className="long" type="text" name="amount" value={amount} placeholder="Amount" onChange={handleChangeAmount}/>
         </form>
-        <Button className="custom-button" style={{marginTop: "10px", marginBottom: "0px", paddingLeft: "40px" , paddingRight: "40px", width: "20%"}}text='Submit' onClick={handleSubmit}> </Button>
+        <Button className="custom-button" style={{marginTop: "10px", marginBottom: "0px", paddingLeft: "40px" , paddingRight: "40px", width: "20vh"}}text='Submit' onClick={handleSubmit}> </Button>
       </div>
       <ToastContainer />
     </div>

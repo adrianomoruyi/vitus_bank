@@ -39,7 +39,7 @@ function Home() {
         <Button className="custom-button" text='Register Today!' onClick={handleClick}></Button>     
       </div>
       <div style={{height:"50px"}}></div>  
-      <p>NOTE: Welcome to my mock banking application! As this is a mock bank, registration and login will not function for security reasons, but <strong> please click the 
+      <p style={{width:"80%"}}>NOTE: Welcome to my mock banking application! As this is a mock bank, registration and login will not function for security reasons, but <strong> please click the 
         "Enter dashboard" button </strong> to enter, view, and play around with the project!
       </p>
       <h3>Sign into your Vitus account</h3>   

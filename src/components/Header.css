@@ -36,3 +36,12 @@ h1{
     justify-content: right;
     margin-right: 20px;
 }
+
+@media (max-width: 684px) {
+    .titleBox h1 {
+      display: none;
+    }
+    .titleBox {
+      width: 20%;
+    }
+  }

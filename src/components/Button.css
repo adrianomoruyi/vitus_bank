@@ -53,3 +53,12 @@
   .custom-button:hover {
     background-color: #ae239c;
   }
+
+  @media (max-width: 684px) {
+    .tab {
+      font-size: 12px;
+    }
+    .tab2 {
+      font-size: 12px;
+    }
+  }

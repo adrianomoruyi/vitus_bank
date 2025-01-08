@@ -60,3 +60,12 @@ h4{
   margin-bottom: 30px;
   text-indent: 30px;
 }
+
+@media (max-width: 684px) {
+  .dropdown {
+    width: 87%;
+  }
+  .column .long {
+    width: 85%;
+  }
+}

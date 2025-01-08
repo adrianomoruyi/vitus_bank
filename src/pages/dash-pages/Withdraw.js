@@ -15,7 +15,6 @@ function Withdraw() {
       //Edge case for minimum amount in an account (with toast)
       if (user.accounts[account] === 0 || parseInt(amount) > user.accounts[account]) 
         {
-          user.accounts[account] = 0;
           toast.warn('Your balance cannot go lower than $0.00', {
             position: "top-center",
             autoClose: 2000,
@@ -69,7 +68,7 @@ function Withdraw() {
           </select>
           <input className="long" type="text" name="amount" value={amount} placeholder="Amount" onChange={handleChangeAmount}/>
         </form>
-          <Button className="custom-button" style={{marginTop: "10px", marginBottom: "0px", paddingLeft: "40px" , paddingRight: "40px", width: "20%"}}text='Submit' onClick={handleSubmit}> </Button>
+          <Button className="custom-button" style={{marginTop: "10px", marginBottom: "0px", paddingLeft: "40px" , paddingRight: "40px", width: "20vh"}}text='Submit' onClick={handleSubmit}> </Button>
         </div>
         <ToastContainer />
     </div>
